@@ -1,0 +1,113 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    background-image: linear-gradient(to right, rgb(245, 245, 199), rgb(158, 151, 123));
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    background-image: linear-gradient(rgb(120, 120, 201), rgb(102, 206, 102));
+    top: 0;
+    left: 0;
+}
+
+.main {
+    margin-left: 250px;
+    padding: 30px;
+    padding-left: 15px;
+    margin-top: 30px;
+}
+
+.sidebar a {
+    display: block;
+    font-size: 30px;
+    padding: 5px 30px;
+    color: rgb(10, 10, 10);
+    border-bottom: rgb(65, 58, 58) solid 2px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background-image: linear-gradient(to right, rgb(135, 233, 135), rgb(197, 160, 197));
+    color: cornsilk;
+    text-align: center;
+}
+
+.navbar {
+    overflow: hidden;
+    background-image: linear-gradient(90deg, rgb(241, 206, 212), rgb(121, 121, 189));
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-left: -15px;
+    padding: 10px 5px;
+}
+
+.navbar a {
+    color: rgb(104, 68, 68);
+    padding: 10px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-image: linear-gradient(to right, rgb(163, 68, 68), rgb(216, 55, 216));
+    color: rgb(46, 41, 41);
+}
+
+.container {
+    position: relative;
+    width: 70%;
+    margin: auto;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 60px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+.sidebar h1 {
+    text-align: center;
+    color: rgb(247, 226, 141);
+    font-size: x-large;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #7a75751c;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #7a757531;
+}
